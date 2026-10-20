@@ -1,0 +1,28 @@
+@model IEnumerable<StudentScoreManagement.Models.Sponsor>
+@{ ViewData["Title"] = "贊助商/客戶管理"; }
+<h1>贊助商與客戶清冊 (Sponsors)</h1>
+<p><a asp-action="Create" class="btn btn-primary">➕ 登記新贊助商/客戶</a></p>
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th>贊助商ID</th>
+            <th>贊助商(客戶)名稱</th>
+            <th>聯絡信箱</th>
+            <th>功能</th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>@item.SponsorID</td>
+            <td>@item.SponsorName</td>
+            <td>@item.ContactEmail</td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.SponsorID" class="btn btn-sm btn-warning">編輯</a> |
+                <a asp-action="Details" asp-route-id="@item.SponsorID" class="btn btn-sm btn-info">贊助履歷</a> |
+                <a asp-action="Delete" asp-route-id="@item.SponsorID" class="btn btn-sm btn-danger">刪除</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

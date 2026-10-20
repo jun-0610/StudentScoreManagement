@@ -1,0 +1,42 @@
+@model StudentScoreManagement.Models.Course
+@{ ViewData["Title"] = "課程詳細資料"; }
+<h1>課程詳細資料</h1>
+<div class="card p-4 mb-4">
+    <dl class="row">
+        <dt class="col-sm-3">課程 ID</dt>
+        <dd class="col-sm-9">@Model.CourseID</dd>
+        <dt class="col-sm-3">課程名稱</dt>
+        <dd class="col-sm-9">@Model.CourseName</dd>
+        <dt class="col-sm-3">學分數</dt>
+        <dd class="col-sm-9">@Model.Credits</dd>
+        <dt class="col-sm-3">開設科系</dt>
+        <dd class="col-sm-9">@(Model.Department != null ? Model.Department.DepartmentName : "無")</dd>
+        <dt class="col-sm-3">授課教師</dt>
+        <dd class="col-sm-9">@(Model.Instructor != null ? Model.Instructor.FullName : "無")</dd>
+    </dl>
+</div>
+<hr />
+<h3>選修此課程學生與成績名單</h3>
+<table class="table table-hover">
+    <thead>
+        <tr><th>學生姓名</th><th>主修科系</th><th>學期</th><th>成績</th></tr>
+    </thead>
+    <tbody>
+@if (Model.Enrollments != null && Model.Enrollments.Any()) {
+    foreach(var e in Model.Enrollments) {
+        <tr>
+            <td>@(e.Student != null ? e.Student.FullName : "無")</td>
+            <td>@(e.Student != null && e.Student.Department != null ? e.Student.Department.DepartmentName : "無")</td>
+            <td>@e.Semester</td>
+            <td>@(e.Grade.HasValue ? e.Grade.Value.ToString("F1") + " 分" : "未評分")</td>
+        </tr>
+    }
+} else {
+    <tr><td colspan="4" class="text-muted text-center">尚無學生選修此課程</td></tr>
+}
+    </tbody>
+</table>
+<div class="mt-4">
+    <a asp-action="Edit" asp-route-id="@Model.CourseID" class="btn btn-primary">編輯</a>
+    <a asp-action="Index" class="btn btn-secondary">返回列表</a>
+</div>

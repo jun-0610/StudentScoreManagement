@@ -1,0 +1,26 @@
+@model StudentScoreManagement.Models.Sponsor
+@{ ViewData["Title"] = "編輯贊助商"; }
+<h1>編輯贊助商資訊</h1>
+<hr />
+<div class="row">
+    <div class="col-md-6">
+        <form asp-action="Edit" class="card p-4">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="SponsorID" />
+            <div class="form-group mb-3">
+                <label asp-for="SponsorName" class="control-label mb-1"></label>
+                <input asp-for="SponsorName" class="form-control" />
+                <span asp-validation-for="SponsorName" class="text-danger"></span>
+            </div>
+            <div class="form-group mb-3">
+                <label asp-for="ContactEmail" class="control-label mb-1"></label>
+                <input asp-for="ContactEmail" class="form-control" type="email" />
+                <span asp-validation-for="ContactEmail" class="text-danger"></span>
+            </div>
+            <div class="form-group mt-4">
+                <input type="submit" value="儲存" class="btn btn-primary" />
+                <a asp-action="Index" class="btn btn-secondary">返回列表</a>
+            </div>
+        </form>
+    </div>
+</div>

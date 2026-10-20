@@ -1,0 +1,33 @@
+@model IEnumerable<StudentScoreManagement.Models.Student>
+@{ ViewData["Title"] = "模糊查詢學生"; }
+<h1>模糊搜尋學生名單</h1>
+<div class="card p-4 mb-4">
+    <form asp-action="Search" method="get" class="row g-3">
+        <div class="col-md-9">
+            <input type="text" name="searchString" class="form-control" placeholder="請輸入姓名關鍵字..." value="@ViewData["CurrentFilter"]" />
+        </div>
+        <div class="col-md-3">
+            <button type="submit" class="btn btn-primary w-100">🔍 搜尋 (LIKE)</button>
+        </div>
+    </form>
+</div>
+<table class="table table-hover">
+    <thead>
+        <tr><th>學生姓名</th><th>電子郵件</th><th>主修科系</th><th>入學日期</th><th>功能</th></tr>
+    </thead>
+    <tbody>
+@if(Model.Any()) {
+    foreach(var item in Model) {
+        <tr>
+            <td>@item.FullName</td>
+            <td>@item.Email</td>
+            <td>@(item.Department != null ? item.Department.DepartmentName : "無")</td>
+            <td>@item.EnrollmentDate.ToString("yyyy-MM-dd")</td>
+            <td><a asp-controller="Student" asp-action="Details" asp-route-id="@item.StudentID" class="btn btn-sm btn-info">個人履歷與修課</a></td>
+        </tr>
+    }
+} else {
+    <tr><td colspan="5" class="text-muted text-center">無符合搜尋結果</td></tr>
+}
+    </tbody>
+</table>

@@ -1,0 +1,32 @@
+@model IEnumerable<StudentScoreManagement.Models.Enrollment>
+@{ ViewData["Title"] = "選課與成績管理"; }
+<h1>學生選課成績清冊 (Cross-Relation)</h1>
+<p><a asp-action="Create" class="btn btn-primary">➕ 新增選課/登記成績</a></p>
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th>選課ID</th>
+            <th>學生姓名</th>
+            <th>選修課程</th>
+            <th>學期</th>
+            <th>評分成績</th>
+            <th>功能</th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>@item.EnrollmentID</td>
+            <td>@(item.Student != null ? item.Student.FullName : "無")</td>
+            <td>@(item.Course != null ? item.Course.CourseName : "無")</td>
+            <td>@item.Semester</td>
+            <td>@(item.Grade.HasValue ? item.Grade.Value.ToString("F1") + " 分" : "未評分")</td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.EnrollmentID" class="btn btn-sm btn-warning">編輯/評分</a> |
+                <a asp-action="Details" asp-route-id="@item.EnrollmentID" class="btn btn-sm btn-info">詳細</a> |
+                <a asp-action="Delete" asp-route-id="@item.EnrollmentID" class="btn btn-sm btn-danger">刪除</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

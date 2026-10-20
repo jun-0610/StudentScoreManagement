@@ -1,0 +1,21 @@
+@model StudentScoreManagement.Models.Enrollment
+@{ ViewData["Title"] = "選課詳細資料"; }
+<h1>選課成績詳細明細</h1>
+<div class="card p-4">
+    <dl class="row">
+        <dt class="col-sm-3">選課流水號</dt>
+        <dd class="col-sm-9">@Model.EnrollmentID</dd>
+        <dt class="col-sm-3">選課學生</dt>
+        <dd class="col-sm-9">@(Model.Student != null ? Model.Student.FullName : "無")</dd>
+        <dt class="col-sm-3">修讀課程</dt>
+        <dd class="col-sm-9">@(Model.Course != null ? Model.Course.CourseName : "無")</dd>
+        <dt class="col-sm-3">學期</dt>
+        <dd class="col-sm-9">@Model.Semester</dd>
+        <dt class="col-sm-3">評分分數</dt>
+        <dd class="col-sm-9">@(Model.Grade.HasValue ? Model.Grade.Value.ToString("F1") + " 分" : "未評分")</dd>
+    </dl>
+</div>
+<div class="mt-4">
+    <a asp-action="Edit" asp-route-id="@Model.EnrollmentID" class="btn btn-primary">編輯</a>
+    <a asp-action="Index" class="btn btn-secondary">返回列表</a>
+</div>

@@ -1,0 +1,59 @@
+@model StudentScoreManagement.Models.Instructor
+@{ ViewData["Title"] = "教師詳細資料"; }
+<h1>教師詳細資料 (組織階層)</h1>
+<div class="card p-4">
+    <dl class="row">
+        <dt class="col-sm-3">教師姓名</dt>
+        <dd class="col-sm-9">@Model.FullName</dd>
+        <dt class="col-sm-3">電子郵件</dt>
+        <dd class="col-sm-9">@Model.Email</dd>
+        <dt class="col-sm-3">薪資</dt>
+        <dd class="col-sm-9">$@Model.Salary.ToString("N2")</dd>
+        <dt class="col-sm-3">所屬科系</dt>
+        <dd class="col-sm-9">@(Model.Department != null ? Model.Department.DepartmentName : "無")</dd>
+        <dt class="col-sm-3">直屬主管</dt>
+        <dd class="col-sm-9">@(Model.Manager != null ? Model.Manager.FullName : "無(最上層主管)")</dd>
+    </dl>
+</div>
+<hr />
+<h3>下屬職員名單 (Organizational Hierarchy)</h3>
+<table class="table table-hover">
+    <thead>
+        <tr><th>姓名</th><th>電子郵件</th><th>薪資</th></tr>
+    </thead>
+    <tbody>
+@if (Model.Subordinates != null && Model.Subordinates.Any()) {
+    foreach(var sub in Model.Subordinates) {
+        <tr><td>@sub.FullName</td><td>@sub.Email</td><td>$@sub.Salary.ToString("N2")</td></tr>
+    }
+} else {
+    <tr><td colspan="3" class="text-muted text-center">目前無直屬下屬</td></tr>
+}
+    </tbody>
+</table>
+<hr />
+<h3>開設課程</h3>
+<ul>
+@if(Model.Courses != null && Model.Courses.Any()) {
+    foreach(var c in Model.Courses) {
+        <li>@c.CourseName (@c.Credits 學分)</li>
+    }
+} else {
+    <li class="text-muted">尚無開設課程</li>
+}
+</ul>
+<hr />
+<h3>主持之專案 (Hierarchy Level 3)</h3>
+<ul>
+@if(Model.ProjectsLed != null && Model.ProjectsLed.Any()) {
+    foreach(var p in Model.ProjectsLed) {
+        <li>專案：@p.ProjectName (預算：$@p.Budget.ToString("N2"))</li>
+    }
+} else {
+    <li class="text-muted">尚無主持任何專案</li>
+}
+</ul>
+<div class="mt-4">
+    <a asp-action="Edit" asp-route-id="@Model.InstructorID" class="btn btn-primary">編輯</a>
+    <a asp-action="Index" class="btn btn-secondary">返回列表</a>
+</div>

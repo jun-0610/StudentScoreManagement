@@ -1,0 +1,123 @@
+@model StudentScoreManagement.Models.Project
+@{ ViewData["Title"] = "專案詳細與團隊管理"; }
+<h1>專案詳細與團隊管理</h1>
+<div class="row">
+    <div class="col-md-6">
+        <div class="card p-4 h-100">
+            <h3>專案主檔資訊</h3>
+            <dl class="row">
+                <dt class="col-sm-4">專案名稱</dt>
+                <dd class="col-sm-8">@Model.ProjectName</dd>
+                <dt class="col-sm-4">經費預算</dt>
+                <dd class="col-sm-8">$@Model.Budget.ToString("N2")</dd>
+                <dt class="col-sm-4">期程</dt>
+                <dd class="col-sm-8">@Model.StartDate.ToString("yyyy-MM-dd") 至 @(Model.EndDate.HasValue ? Model.EndDate.Value.ToString("yyyy-MM-dd") : "進行中")</dd>
+                <dt class="col-sm-4">負責人(教師)</dt>
+                <dd class="col-sm-8">@(Model.LeadInstructor != null ? Model.LeadInstructor.FullName : "無")</dd>
+            </dl>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="card p-4 h-100">
+            <h3>新增專案成員 (Many-to-Many)</h3>
+            <form asp-action="AddMember" method="post">
+                <input type="hidden" name="projectId" value="@Model.ProjectID" />
+                <div class="form-group mb-2">
+                    <label class="mb-1">選擇學生</label>
+                    <select name="studentId" class="form-control" asp-items="ViewBag.StudentID"></select>
+                </div>
+                <div class="form-group mb-2">
+                    <label class="mb-1">角色定位</label>
+                    <input name="role" class="form-control" value="Research Assistant" placeholder="例如：Lead Developer, Tester" />
+                </div>
+                <div class="form-group mb-3">
+                    <label class="mb-1">每週分配工時 (小時)</label>
+                    <input name="hoursAllocated" class="form-control" type="number" value="10" />
+                </div>
+                <button type="submit" class="btn btn-success">➕ 加入團隊</button>
+            </form>
+        </div>
+    </div>
+</div>
+<hr />
+<h3>專案成員清冊 (Many-to-Many Junction Table)</h3>
+<table class="table table-hover">
+    <thead>
+        <tr><th>學生學號</th><th>學生姓名</th><th>專案角色</th><th>分配時數/週</th><th>操作</th></tr>
+    </thead>
+    <tbody>
+@if (Model.ProjectMembers != null && Model.ProjectMembers.Any()) {
+    foreach(var member in Model.ProjectMembers) {
+        <tr>
+            <td>@member.StudentID</td>
+            <td>@(member.Student != null ? member.Student.FullName : "無")</td>
+            <td>@member.Role</td>
+            <td>@member.HoursAllocated 小時</td>
+            <td>
+                <form asp-action="RemoveMember" method="post" onsubmit="return confirm('確定移除該成員？');">
+                    <input type="hidden" name="projectId" value="@Model.ProjectID" />
+                    <input type="hidden" name="studentId" value="@member.StudentID" />
+                    <button type="submit" class="btn btn-sm btn-danger">移除成員</button>
+                </form>
+            </td>
+        </tr>
+    }
+} else {
+    <tr><td colspan="5" class="text-muted text-center">目前尚無團隊成員，請於右上方新增。</td></tr>
+}
+    </tbody>
+</table>
+<hr />
+<h3>對應專案下屬任務 (Hierarchy Level 4)</h3>
+<table class="table table-hover">
+    <thead>
+        <tr><th>任務名稱</th><th>指派執行學生</th><th>截止日期</th><th>狀態</th></tr>
+    </thead>
+    <tbody>
+@if (Model.ProjectTasks != null && Model.ProjectTasks.Any()) {
+    foreach(var task in Model.ProjectTasks) {
+        <tr>
+            <td>@task.TaskName</td>
+            <td>@(task.AssignedStudent != null ? task.AssignedStudent.FullName : "無")</td>
+            <td>@(task.DueDate.HasValue ? task.DueDate.Value.ToString("yyyy-MM-dd") : "無")</td>
+            <td>
+                @if(task.Status == "Completed") {
+                    <span class="badge bg-success">已完成</span>
+                } else if(task.Status == "In Progress") {
+                    <span class="badge bg-primary">進行中</span>
+                } else {
+                    <span class="badge bg-warning text-dark">待處理</span>
+                }
+            </td>
+        </tr>
+    }
+} else {
+    <tr><td colspan="4" class="text-muted text-center">尚無指派任何任務。</td></tr>
+}
+    </tbody>
+</table>
+<hr />
+<h3>專案外部贊助與客戶金流 (Sponsorship / Customer Orders)</h3>
+<table class="table table-hover">
+    <thead>
+        <tr><th>贊助編號</th><th>贊助商(客戶)</th><th>贊助金額</th><th>贊助日期</th></tr>
+    </thead>
+    <tbody>
+@if (Model.ProjectFundings != null && Model.ProjectFundings.Any()) {
+    foreach(var funding in Model.ProjectFundings) {
+        <tr>
+            <td>@funding.FundingID</td>
+            <td>@(funding.Sponsor != null ? funding.Sponsor.SponsorName : "無")</td>
+            <td>$@funding.FundingAmount.ToString("N2")</td>
+            <td>@funding.FundingDate.ToString("yyyy-MM-dd")</td>
+        </tr>
+    }
+} else {
+    <tr><td colspan="4" class="text-muted text-center">無外部資金贊助紀錄。</td></tr>
+}
+    </tbody>
+</table>
+<div class="mt-4">
+    <a asp-action="Edit" asp-route-id="@Model.ProjectID" class="btn btn-primary">編輯專案</a>
+    <a asp-action="Index" class="btn btn-secondary">返回列表</a>
+</div>

@@ -1,0 +1,21 @@
+@model StudentScoreManagement.Models.ProjectFunding
+@{ ViewData["Title"] = "提撥合約明細"; }
+<h1>贊助資金提撥詳細資料</h1>
+<div class="card p-4">
+    <dl class="row">
+        <dt class="col-sm-3">合約ID</dt>
+        <dd class="col-sm-9">@Model.FundingID</dd>
+        <dt class="col-sm-3">撥款贊助商(客戶)</dt>
+        <dd class="col-sm-9">@(Model.Sponsor != null ? Model.Sponsor.SponsorName : "無")</dd>
+        <dt class="col-sm-3">受委託專案</dt>
+        <dd class="col-sm-9">@(Model.Project != null ? Model.Project.ProjectName : "無")</dd>
+        <dt class="col-sm-3">提撥合約金額</dt>
+        <dd class="col-sm-9">$@Model.FundingAmount.ToString("N2")</dd>
+        <dt class="col-sm-3">撥付日期</dt>
+        <dd class="col-sm-9">@Model.FundingDate.ToString("yyyy-MM-dd")</dd>
+    </dl>
+</div>
+<div class="mt-4">
+    <a asp-action="Edit" asp-route-id="@Model.FundingID" class="btn btn-primary">編輯</a>
+    <a asp-action="Index" class="btn btn-secondary">返回列表</a>
+</div>

@@ -1,0 +1,38 @@
+@model StudentScoreManagement.Models.Sponsor
+@{ ViewData["Title"] = "贊助履歷詳細資料"; }
+<h1>贊助商/客戶詳細履歷</h1>
+<div class="card p-4 mb-4">
+    <dl class="row">
+        <dt class="col-sm-3">單位 ID</dt>
+        <dd class="col-sm-9">@Model.SponsorID</dd>
+        <dt class="col-sm-3">贊助單位/客戶名稱</dt>
+        <dd class="col-sm-9">@Model.SponsorName</dd>
+        <dt class="col-sm-3">聯絡電子信箱</dt>
+        <dd class="col-sm-9">@Model.ContactEmail</dd>
+    </dl>
+</div>
+<hr />
+<h3>該贊助商之資金提撥紀錄 (Customer Order Funding)</h3>
+<table class="table table-hover">
+    <thead>
+        <tr><th>合約ID</th><th>贊助專案名稱</th><th>贊助金額</th><th>撥款日期</th></tr>
+    </thead>
+    <tbody>
+@if (Model.ProjectFundings != null && Model.ProjectFundings.Any()) {
+    foreach(var pf in Model.ProjectFundings) {
+        <tr>
+            <td>@pf.FundingID</td>
+            <td>@(pf.Project != null ? pf.Project.ProjectName : "無")</td>
+            <td>$@pf.FundingAmount.ToString("N2")</td>
+            <td>@pf.FundingDate.ToString("yyyy-MM-dd")</td>
+        </tr>
+    }
+} else {
+    <tr><td colspan="4" class="text-muted text-center">尚無撥款贊助紀錄。</td></tr>
+}
+    </tbody>
+</table>
+<div class="mt-4">
+    <a asp-action="Edit" asp-route-id="@Model.SponsorID" class="btn btn-primary">編輯資訊</a>
+    <a asp-action="Index" class="btn btn-secondary">返回列表</a>
+</div>

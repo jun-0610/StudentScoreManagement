@@ -1,0 +1,249 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = StudentScoreManagement
+build_property.RootNamespace = StudentScoreManagement
+build_property.ProjectDir = C:\Users\Sabrina\Downloads\StudentScoreManagement-20261020T114155Z-1-001\StudentScoreManagement\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\Sabrina\Downloads\StudentScoreManagement-20261020T114155Z-1-001\StudentScoreManagement
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 
+
+[C:/Users/Sabrina/Downloads/StudentScoreManagement-20261020T114155Z-1-001/StudentScoreManagement/Views/Course/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sabrina/Downloads/StudentScoreManagement-20261020T114155Z-1-001/StudentScoreManagement/Views/Course/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sabrina/Downloads/StudentScoreManagement-20261020T114155Z-1-001/StudentScoreManagement/Views/Course/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sabrina/Downloads/StudentScoreManagement-20261020T114155Z-1-001/StudentScoreManagement/Views/Course/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sabrina/Downloads/StudentScoreManagement-20261020T114155Z-1-001/StudentScoreManagement/Views/Course/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sabrina/Downloads/StudentScoreManagement-20261020T114155Z-1-001/StudentScoreManagement/Views/Department/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0bWVudFxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sabrina/Downloads/StudentScoreManagement-20261020T114155Z-1-001/StudentScoreManagement/Views/Department/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0bWVudFxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sabrina/Downloads/StudentScoreManagement-20261020T114155Z-1-001/StudentScoreManagement/Views/Department/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0bWVudFxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sabrina/Downloads/StudentScoreManagement-20261020T114155Z-1-001/StudentScoreManagement/Views/Department/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0bWVudFxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sabrina/Downloads/StudentScoreManagement-20261020T114155Z-1-001/StudentScoreManagement/Views/Department/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0bWVudFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sabrina/Downloads/StudentScoreManagement-20261020T114155Z-1-001/StudentScoreManagement/Views/Enrollment/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW5yb2xsbWVudFxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sabrina/Downloads/StudentScoreManagement-20261020T114155Z-1-001/StudentScoreManagement/Views/Enrollment/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW5yb2xsbWVudFxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sabrina/Downloads/StudentScoreManagement-20261020T114155Z-1-001/StudentScoreManagement/Views/Enrollment/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW5yb2xsbWVudFxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sabrina/Downloads/StudentScoreManagement-20261020T114155Z-1-001/StudentScoreManagement/Views/Enrollment/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW5yb2xsbWVudFxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sabrina/Downloads/StudentScoreManagement-20261020T114155Z-1-001/StudentScoreManagement/Views/Enrollment/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW5yb2xsbWVudFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sabrina/Downloads/StudentScoreManagement-20261020T114155Z-1-001/StudentScoreManagement/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sabrina/Downloads/StudentScoreManagement-20261020T114155Z-1-001/StudentScoreManagement/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sabrina/Downloads/StudentScoreManagement-20261020T114155Z-1-001/StudentScoreManagement/Views/Instructor/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zdHJ1Y3RvclxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sabrina/Downloads/StudentScoreManagement-20261020T114155Z-1-001/StudentScoreManagement/Views/Instructor/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zdHJ1Y3RvclxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sabrina/Downloads/StudentScoreManagement-20261020T114155Z-1-001/StudentScoreManagement/Views/Instructor/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zdHJ1Y3RvclxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sabrina/Downloads/StudentScoreManagement-20261020T114155Z-1-001/StudentScoreManagement/Views/Instructor/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zdHJ1Y3RvclxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sabrina/Downloads/StudentScoreManagement-20261020T114155Z-1-001/StudentScoreManagement/Views/Instructor/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zdHJ1Y3RvclxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sabrina/Downloads/StudentScoreManagement-20261020T114155Z-1-001/StudentScoreManagement/Views/ProjectFunding/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdEZ1bmRpbmdcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sabrina/Downloads/StudentScoreManagement-20261020T114155Z-1-001/StudentScoreManagement/Views/ProjectFunding/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdEZ1bmRpbmdcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sabrina/Downloads/StudentScoreManagement-20261020T114155Z-1-001/StudentScoreManagement/Views/ProjectFunding/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdEZ1bmRpbmdcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sabrina/Downloads/StudentScoreManagement-20261020T114155Z-1-001/StudentScoreManagement/Views/ProjectFunding/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdEZ1bmRpbmdcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sabrina/Downloads/StudentScoreManagement-20261020T114155Z-1-001/StudentScoreManagement/Views/ProjectFunding/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdEZ1bmRpbmdcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sabrina/Downloads/StudentScoreManagement-20261020T114155Z-1-001/StudentScoreManagement/Views/ProjectTask/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdFRhc2tcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sabrina/Downloads/StudentScoreManagement-20261020T114155Z-1-001/StudentScoreManagement/Views/ProjectTask/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdFRhc2tcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sabrina/Downloads/StudentScoreManagement-20261020T114155Z-1-001/StudentScoreManagement/Views/ProjectTask/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdFRhc2tcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sabrina/Downloads/StudentScoreManagement-20261020T114155Z-1-001/StudentScoreManagement/Views/ProjectTask/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdFRhc2tcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sabrina/Downloads/StudentScoreManagement-20261020T114155Z-1-001/StudentScoreManagement/Views/ProjectTask/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdFRhc2tcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sabrina/Downloads/StudentScoreManagement-20261020T114155Z-1-001/StudentScoreManagement/Views/Project/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdFxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sabrina/Downloads/StudentScoreManagement-20261020T114155Z-1-001/StudentScoreManagement/Views/Project/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdFxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sabrina/Downloads/StudentScoreManagement-20261020T114155Z-1-001/StudentScoreManagement/Views/Project/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdFxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sabrina/Downloads/StudentScoreManagement-20261020T114155Z-1-001/StudentScoreManagement/Views/Project/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdFxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sabrina/Downloads/StudentScoreManagement-20261020T114155Z-1-001/StudentScoreManagement/Views/Project/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sabrina/Downloads/StudentScoreManagement-20261020T114155Z-1-001/StudentScoreManagement/Views/Report/AdvancedQueries.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVwb3J0XEFkdmFuY2VkUXVlcmllcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sabrina/Downloads/StudentScoreManagement-20261020T114155Z-1-001/StudentScoreManagement/Views/Report/DataDictionary.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVwb3J0XERhdGFEaWN0aW9uYXJ5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sabrina/Downloads/StudentScoreManagement-20261020T114155Z-1-001/StudentScoreManagement/Views/Report/ScoreReport.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVwb3J0XFNjb3JlUmVwb3J0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sabrina/Downloads/StudentScoreManagement-20261020T114155Z-1-001/StudentScoreManagement/Views/Report/Search.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVwb3J0XFNlYXJjaC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sabrina/Downloads/StudentScoreManagement-20261020T114155Z-1-001/StudentScoreManagement/Views/Report/Statistics.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVwb3J0XFN0YXRpc3RpY3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sabrina/Downloads/StudentScoreManagement-20261020T114155Z-1-001/StudentScoreManagement/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sabrina/Downloads/StudentScoreManagement-20261020T114155Z-1-001/StudentScoreManagement/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sabrina/Downloads/StudentScoreManagement-20261020T114155Z-1-001/StudentScoreManagement/Views/Sponsor/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3BvbnNvclxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sabrina/Downloads/StudentScoreManagement-20261020T114155Z-1-001/StudentScoreManagement/Views/Sponsor/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3BvbnNvclxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sabrina/Downloads/StudentScoreManagement-20261020T114155Z-1-001/StudentScoreManagement/Views/Sponsor/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3BvbnNvclxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sabrina/Downloads/StudentScoreManagement-20261020T114155Z-1-001/StudentScoreManagement/Views/Sponsor/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3BvbnNvclxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sabrina/Downloads/StudentScoreManagement-20261020T114155Z-1-001/StudentScoreManagement/Views/Sponsor/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3BvbnNvclxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sabrina/Downloads/StudentScoreManagement-20261020T114155Z-1-001/StudentScoreManagement/Views/Student/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudFxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sabrina/Downloads/StudentScoreManagement-20261020T114155Z-1-001/StudentScoreManagement/Views/Student/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudFxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sabrina/Downloads/StudentScoreManagement-20261020T114155Z-1-001/StudentScoreManagement/Views/Student/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudFxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sabrina/Downloads/StudentScoreManagement-20261020T114155Z-1-001/StudentScoreManagement/Views/Student/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudFxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sabrina/Downloads/StudentScoreManagement-20261020T114155Z-1-001/StudentScoreManagement/Views/Student/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sabrina/Downloads/StudentScoreManagement-20261020T114155Z-1-001/StudentScoreManagement/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sabrina/Downloads/StudentScoreManagement-20261020T114155Z-1-001/StudentScoreManagement/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sabrina/Downloads/StudentScoreManagement-20261020T114155Z-1-001/StudentScoreManagement/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-h71siv7b2a

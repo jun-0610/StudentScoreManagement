@@ -1,0 +1,35 @@
+@{
+    ViewData["Title"] = "Dashboard";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Student Score Management</h1>
+    <p>學生成績管理系統 Dashboard</p>
+</div>
+
+<div class="row mt-5">
+    <div class="col-md-4">
+        <div class="card text-white bg-primary mb-3">
+            <div class="card-header">學生總數</div>
+            <div class="card-body">
+                <h5 class="card-title">@ViewBag.StudentCount 人</h5>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card text-white bg-success mb-3">
+            <div class="card-header">課程總數</div>
+            <div class="card-body">
+                <h5 class="card-title">@ViewBag.CourseCount 門</h5>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card text-white bg-info mb-3">
+            <div class="card-header">成績筆數</div>
+            <div class="card-body">
+                <h5 class="card-title">@ViewBag.ScoreCount 筆</h5>
+            </div>
+        </div>
+    </div>
+</div>

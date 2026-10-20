@@ -1,0 +1,42 @@
+@model IEnumerable<StudentScoreManagement.Models.ProjectTask>
+@{ ViewData["Title"] = "任務分配管理"; }
+<h1>專案任務分配列表 (Hierarchy Level 4)</h1>
+<p><a asp-action="Create" class="btn btn-primary">➕ 指派新任務</a></p>
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th>任務ID</th>
+            <th>任務名稱</th>
+            <th>所屬專案</th>
+            <th>被指派學生</th>
+            <th>任務狀態</th>
+            <th>截止日期</th>
+            <th>功能</th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>@item.TaskID</td>
+            <td>@item.TaskName</td>
+            <td>@(item.Project != null ? item.Project.ProjectName : "無")</td>
+            <td>@(item.AssignedStudent != null ? item.AssignedStudent.FullName : "無")</td>
+            <td>
+                @if(item.Status == "Completed") {
+                    <span class="badge bg-success">已完成</span>
+                } else if(item.Status == "In Progress") {
+                    <span class="badge bg-primary">進行中</span>
+                } else {
+                    <span class="badge bg-warning text-dark">待處理</span>
+                }
+            </td>
+            <td>@(item.DueDate.HasValue ? item.DueDate.Value.ToString("yyyy-MM-dd") : "無期限")</td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.TaskID" class="btn btn-sm btn-warning">編輯</a> |
+                <a asp-action="Details" asp-route-id="@item.TaskID" class="btn btn-sm btn-info">詳細</a> |
+                <a asp-action="Delete" asp-route-id="@item.TaskID" class="btn btn-sm btn-danger">刪除</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

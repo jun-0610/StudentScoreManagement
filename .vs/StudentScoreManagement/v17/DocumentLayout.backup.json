@@ -1,0 +1,548 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Sabrina\\Downloads\\StudentScoreManagement-20261020T114155Z-1-001\\StudentScoreManagement\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C49B0B79-96C3-DCDF-DB59-2402C8344BF7}|StudentScoreManagement.csproj|c:\\users\\sabrina\\downloads\\studentscoremanagement-20261020t114155z-1-001\\studentscoremanagement\\views\\report\\datadictionary.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C49B0B79-96C3-DCDF-DB59-2402C8344BF7}|StudentScoreManagement.csproj|solutionrelative:views\\report\\datadictionary.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C49B0B79-96C3-DCDF-DB59-2402C8344BF7}|StudentScoreManagement.csproj|c:\\users\\sabrina\\downloads\\studentscoremanagement-20261020t114155z-1-001\\studentscoremanagement\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C49B0B79-96C3-DCDF-DB59-2402C8344BF7}|StudentScoreManagement.csproj|solutionrelative:views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C49B0B79-96C3-DCDF-DB59-2402C8344BF7}|StudentScoreManagement.csproj|c:\\users\\sabrina\\downloads\\studentscoremanagement-20261020t114155z-1-001\\studentscoremanagement\\complexdb.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
+      "RelativeMoniker": "D:0:0:{C49B0B79-96C3-DCDF-DB59-2402C8344BF7}|StudentScoreManagement.csproj|solutionrelative:complexdb.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C49B0B79-96C3-DCDF-DB59-2402C8344BF7}|StudentScoreManagement.csproj|c:\\users\\sabrina\\downloads\\studentscoremanagement-20261020t114155z-1-001\\studentscoremanagement\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C49B0B79-96C3-DCDF-DB59-2402C8344BF7}|StudentScoreManagement.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C49B0B79-96C3-DCDF-DB59-2402C8344BF7}|StudentScoreManagement.csproj|c:\\users\\sabrina\\downloads\\studentscoremanagement-20261020t114155z-1-001\\studentscoremanagement\\views\\student\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C49B0B79-96C3-DCDF-DB59-2402C8344BF7}|StudentScoreManagement.csproj|solutionrelative:views\\student\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C49B0B79-96C3-DCDF-DB59-2402C8344BF7}|StudentScoreManagement.csproj|c:\\users\\sabrina\\downloads\\studentscoremanagement-20261020t114155z-1-001\\studentscoremanagement\\studentscoremanagement.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{C49B0B79-96C3-DCDF-DB59-2402C8344BF7}|StudentScoreManagement.csproj|solutionrelative:studentscoremanagement.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C49B0B79-96C3-DCDF-DB59-2402C8344BF7}|StudentScoreManagement.csproj|c:\\users\\sabrina\\downloads\\studentscoremanagement-20261020t114155z-1-001\\studentscoremanagement\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C49B0B79-96C3-DCDF-DB59-2402C8344BF7}|StudentScoreManagement.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C49B0B79-96C3-DCDF-DB59-2402C8344BF7}|StudentScoreManagement.csproj|c:\\users\\sabrina\\downloads\\studentscoremanagement-20261020t114155z-1-001\\studentscoremanagement\\models\\reportviewmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C49B0B79-96C3-DCDF-DB59-2402C8344BF7}|StudentScoreManagement.csproj|solutionrelative:models\\reportviewmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C49B0B79-96C3-DCDF-DB59-2402C8344BF7}|StudentScoreManagement.csproj|c:\\users\\sabrina\\downloads\\studentscoremanagement-20261020t114155z-1-001\\studentscoremanagement\\db.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
+      "RelativeMoniker": "D:0:0:{C49B0B79-96C3-DCDF-DB59-2402C8344BF7}|StudentScoreManagement.csproj|solutionrelative:db.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C49B0B79-96C3-DCDF-DB59-2402C8344BF7}|StudentScoreManagement.csproj|c:\\users\\sabrina\\downloads\\studentscoremanagement-20261020t114155z-1-001\\studentscoremanagement\\models\\projecttask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C49B0B79-96C3-DCDF-DB59-2402C8344BF7}|StudentScoreManagement.csproj|solutionrelative:models\\projecttask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C49B0B79-96C3-DCDF-DB59-2402C8344BF7}|StudentScoreManagement.csproj|c:\\users\\sabrina\\downloads\\studentscoremanagement-20261020t114155z-1-001\\studentscoremanagement\\models\\sponsor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C49B0B79-96C3-DCDF-DB59-2402C8344BF7}|StudentScoreManagement.csproj|solutionrelative:models\\sponsor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C49B0B79-96C3-DCDF-DB59-2402C8344BF7}|StudentScoreManagement.csproj|c:\\users\\sabrina\\downloads\\studentscoremanagement-20261020t114155z-1-001\\studentscoremanagement\\models\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C49B0B79-96C3-DCDF-DB59-2402C8344BF7}|StudentScoreManagement.csproj|solutionrelative:models\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C49B0B79-96C3-DCDF-DB59-2402C8344BF7}|StudentScoreManagement.csproj|c:\\users\\sabrina\\downloads\\studentscoremanagement-20261020t114155z-1-001\\studentscoremanagement\\views\\course\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C49B0B79-96C3-DCDF-DB59-2402C8344BF7}|StudentScoreManagement.csproj|solutionrelative:views\\course\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C49B0B79-96C3-DCDF-DB59-2402C8344BF7}|StudentScoreManagement.csproj|c:\\users\\sabrina\\downloads\\studentscoremanagement-20261020t114155z-1-001\\studentscoremanagement\\views\\report\\scorereport.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C49B0B79-96C3-DCDF-DB59-2402C8344BF7}|StudentScoreManagement.csproj|solutionrelative:views\\report\\scorereport.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C49B0B79-96C3-DCDF-DB59-2402C8344BF7}|StudentScoreManagement.csproj|c:\\users\\sabrina\\downloads\\studentscoremanagement-20261020t114155z-1-001\\studentscoremanagement\\views\\student\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C49B0B79-96C3-DCDF-DB59-2402C8344BF7}|StudentScoreManagement.csproj|solutionrelative:views\\student\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C49B0B79-96C3-DCDF-DB59-2402C8344BF7}|StudentScoreManagement.csproj|c:\\users\\sabrina\\downloads\\studentscoremanagement-20261020t114155z-1-001\\studentscoremanagement\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C49B0B79-96C3-DCDF-DB59-2402C8344BF7}|StudentScoreManagement.csproj|solutionrelative:views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C49B0B79-96C3-DCDF-DB59-2402C8344BF7}|StudentScoreManagement.csproj|c:\\users\\sabrina\\downloads\\studentscoremanagement-20261020t114155z-1-001\\studentscoremanagement\\views\\report\\search.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C49B0B79-96C3-DCDF-DB59-2402C8344BF7}|StudentScoreManagement.csproj|solutionrelative:views\\report\\search.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C49B0B79-96C3-DCDF-DB59-2402C8344BF7}|StudentScoreManagement.csproj|c:\\users\\sabrina\\downloads\\studentscoremanagement-20261020t114155z-1-001\\studentscoremanagement\\views\\student\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C49B0B79-96C3-DCDF-DB59-2402C8344BF7}|StudentScoreManagement.csproj|solutionrelative:views\\student\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C49B0B79-96C3-DCDF-DB59-2402C8344BF7}|StudentScoreManagement.csproj|c:\\users\\sabrina\\downloads\\studentscoremanagement-20261020t114155z-1-001\\studentscoremanagement\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C49B0B79-96C3-DCDF-DB59-2402C8344BF7}|StudentScoreManagement.csproj|solutionrelative:models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C49B0B79-96C3-DCDF-DB59-2402C8344BF7}|StudentScoreManagement.csproj|c:\\users\\sabrina\\downloads\\studentscoremanagement-20261020t114155z-1-001\\studentscoremanagement\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C49B0B79-96C3-DCDF-DB59-2402C8344BF7}|StudentScoreManagement.csproj|solutionrelative:controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C49B0B79-96C3-DCDF-DB59-2402C8344BF7}|StudentScoreManagement.csproj|c:\\users\\sabrina\\downloads\\studentscoremanagement-20261020t114155z-1-001\\studentscoremanagement\\views\\course\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C49B0B79-96C3-DCDF-DB59-2402C8344BF7}|StudentScoreManagement.csproj|solutionrelative:views\\course\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C49B0B79-96C3-DCDF-DB59-2402C8344BF7}|StudentScoreManagement.csproj|c:\\users\\sabrina\\downloads\\studentscoremanagement-20261020t114155z-1-001\\studentscoremanagement\\controllers\\reportcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C49B0B79-96C3-DCDF-DB59-2402C8344BF7}|StudentScoreManagement.csproj|solutionrelative:controllers\\reportcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C49B0B79-96C3-DCDF-DB59-2402C8344BF7}|StudentScoreManagement.csproj|c:\\users\\sabrina\\downloads\\studentscoremanagement-20261020t114155z-1-001\\studentscoremanagement\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C49B0B79-96C3-DCDF-DB59-2402C8344BF7}|StudentScoreManagement.csproj|solutionrelative:views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C49B0B79-96C3-DCDF-DB59-2402C8344BF7}|StudentScoreManagement.csproj|c:\\users\\sabrina\\downloads\\studentscoremanagement-20261020t114155z-1-001\\studentscoremanagement\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C49B0B79-96C3-DCDF-DB59-2402C8344BF7}|StudentScoreManagement.csproj|solutionrelative:views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C49B0B79-96C3-DCDF-DB59-2402C8344BF7}|StudentScoreManagement.csproj|c:\\users\\sabrina\\downloads\\studentscoremanagement-20261020t114155z-1-001\\studentscoremanagement\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C49B0B79-96C3-DCDF-DB59-2402C8344BF7}|StudentScoreManagement.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C49B0B79-96C3-DCDF-DB59-2402C8344BF7}|StudentScoreManagement.csproj|c:\\users\\sabrina\\downloads\\studentscoremanagement-20261020t114155z-1-001\\studentscoremanagement\\generateviews.py||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{C49B0B79-96C3-DCDF-DB59-2402C8344BF7}|StudentScoreManagement.csproj|solutionrelative:generateviews.py||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C49B0B79-96C3-DCDF-DB59-2402C8344BF7}|StudentScoreManagement.csproj|c:\\users\\sabrina\\downloads\\studentscoremanagement-20261020t114155z-1-001\\studentscoremanagement\\generateviews.ps1||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{C49B0B79-96C3-DCDF-DB59-2402C8344BF7}|StudentScoreManagement.csproj|solutionrelative:generateviews.ps1||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C49B0B79-96C3-DCDF-DB59-2402C8344BF7}|StudentScoreManagement.csproj|c:\\users\\sabrina\\downloads\\studentscoremanagement-20261020t114155z-1-001\\studentscoremanagement\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C49B0B79-96C3-DCDF-DB59-2402C8344BF7}|StudentScoreManagement.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C49B0B79-96C3-DCDF-DB59-2402C8344BF7}|StudentScoreManagement.csproj|c:\\users\\sabrina\\downloads\\studentscoremanagement-20261020t114155z-1-001\\studentscoremanagement\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C49B0B79-96C3-DCDF-DB59-2402C8344BF7}|StudentScoreManagement.csproj|solutionrelative:models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C49B0B79-96C3-DCDF-DB59-2402C8344BF7}|StudentScoreManagement.csproj|c:\\users\\sabrina\\downloads\\studentscoremanagement-20261020t114155z-1-001\\studentscoremanagement\\models\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C49B0B79-96C3-DCDF-DB59-2402C8344BF7}|StudentScoreManagement.csproj|solutionrelative:models\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C49B0B79-96C3-DCDF-DB59-2402C8344BF7}|StudentScoreManagement.csproj|c:\\users\\sabrina\\downloads\\studentscoremanagement-20261020t114155z-1-001\\studentscoremanagement\\views\\report\\statistics.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C49B0B79-96C3-DCDF-DB59-2402C8344BF7}|StudentScoreManagement.csproj|solutionrelative:views\\report\\statistics.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C49B0B79-96C3-DCDF-DB59-2402C8344BF7}|StudentScoreManagement.csproj|c:\\users\\sabrina\\downloads\\studentscoremanagement-20261020t114155z-1-001\\studentscoremanagement\\views\\course\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C49B0B79-96C3-DCDF-DB59-2402C8344BF7}|StudentScoreManagement.csproj|solutionrelative:views\\course\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C49B0B79-96C3-DCDF-DB59-2402C8344BF7}|StudentScoreManagement.csproj|c:\\users\\sabrina\\downloads\\studentscoremanagement-20261020t114155z-1-001\\studentscoremanagement\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C49B0B79-96C3-DCDF-DB59-2402C8344BF7}|StudentScoreManagement.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\Sabrina\\Downloads\\StudentScoreManagement-20261020T114155Z-1-001\\StudentScoreManagement\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\Sabrina\\Downloads\\StudentScoreManagement-20261020T114155Z-1-001\\StudentScoreManagement\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-24T16:23:20.661Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Sabrina\\Downloads\\StudentScoreManagement-20261020T114155Z-1-001\\StudentScoreManagement\\Views\\Student\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Student\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Sabrina\\Downloads\\StudentScoreManagement-20261020T114155Z-1-001\\StudentScoreManagement\\Views\\Student\\Create.cshtml",
+              "RelativeToolTip": "Views\\Student\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-25T02:13:52.481Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ComplexDB.sql",
+              "DocumentMoniker": "C:\\Users\\Sabrina\\Downloads\\StudentScoreManagement-20261020T114155Z-1-001\\StudentScoreManagement\\ComplexDB.sql",
+              "RelativeDocumentMoniker": "ComplexDB.sql",
+              "ToolTip": "C:\\Users\\Sabrina\\Downloads\\StudentScoreManagement-20261020T114155Z-1-001\\StudentScoreManagement\\ComplexDB.sql",
+              "RelativeToolTip": "ComplexDB.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2026-06-25T02:15:41.478Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DataDictionary.cshtml",
+              "DocumentMoniker": "C:\\Users\\Sabrina\\Downloads\\StudentScoreManagement-20261020T114155Z-1-001\\StudentScoreManagement\\Views\\Report\\DataDictionary.cshtml",
+              "RelativeDocumentMoniker": "Views\\Report\\DataDictionary.cshtml",
+              "ToolTip": "C:\\Users\\Sabrina\\Downloads\\StudentScoreManagement-20261020T114155Z-1-001\\StudentScoreManagement\\Views\\Report\\DataDictionary.cshtml",
+              "RelativeToolTip": "Views\\Report\\DataDictionary.cshtml",
+              "ViewState": "AgIAAIUAAAAAAAAAAAAAAAAAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-23T17:00:42.524Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Sabrina\\Downloads\\StudentScoreManagement-20261020T114155Z-1-001\\StudentScoreManagement\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Sabrina\\Downloads\\StudentScoreManagement-20261020T114155Z-1-001\\StudentScoreManagement\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAEoAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-24T08:11:13.283Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "StudentScoreManagement.csproj",
+              "DocumentMoniker": "C:\\Users\\Sabrina\\Downloads\\StudentScoreManagement-20261020T114155Z-1-001\\StudentScoreManagement\\StudentScoreManagement.csproj",
+              "RelativeDocumentMoniker": "StudentScoreManagement.csproj",
+              "ToolTip": "C:\\Users\\Sabrina\\Downloads\\StudentScoreManagement-20261020T114155Z-1-001\\StudentScoreManagement\\StudentScoreManagement.csproj",
+              "RelativeToolTip": "StudentScoreManagement.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-06-25T02:37:42.316Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ReportViewModels.cs",
+              "DocumentMoniker": "C:\\Users\\Sabrina\\Downloads\\StudentScoreManagement-20261020T114155Z-1-001\\StudentScoreManagement\\Models\\ReportViewModels.cs",
+              "RelativeDocumentMoniker": "Models\\ReportViewModels.cs",
+              "ToolTip": "C:\\Users\\Sabrina\\Downloads\\StudentScoreManagement-20261020T114155Z-1-001\\StudentScoreManagement\\Models\\ReportViewModels.cs",
+              "RelativeToolTip": "Models\\ReportViewModels.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAzwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-24T08:10:57.848Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Sabrina\\Downloads\\StudentScoreManagement-20261020T114155Z-1-001\\StudentScoreManagement\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Sabrina\\Downloads\\StudentScoreManagement-20261020T114155Z-1-001\\StudentScoreManagement\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAlwBUAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-25T02:14:15.929Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ProjectTask.cs",
+              "DocumentMoniker": "C:\\Users\\Sabrina\\Downloads\\StudentScoreManagement-20261020T114155Z-1-001\\StudentScoreManagement\\Models\\ProjectTask.cs",
+              "RelativeDocumentMoniker": "Models\\ProjectTask.cs",
+              "ToolTip": "C:\\Users\\Sabrina\\Downloads\\StudentScoreManagement-20261020T114155Z-1-001\\StudentScoreManagement\\Models\\ProjectTask.cs",
+              "RelativeToolTip": "Models\\ProjectTask.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-25T02:14:08.867Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Sponsor.cs",
+              "DocumentMoniker": "C:\\Users\\Sabrina\\Downloads\\StudentScoreManagement-20261020T114155Z-1-001\\StudentScoreManagement\\Models\\Sponsor.cs",
+              "RelativeDocumentMoniker": "Models\\Sponsor.cs",
+              "ToolTip": "C:\\Users\\Sabrina\\Downloads\\StudentScoreManagement-20261020T114155Z-1-001\\StudentScoreManagement\\Models\\Sponsor.cs",
+              "RelativeToolTip": "Models\\Sponsor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-25T02:14:07.448Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Department.cs",
+              "DocumentMoniker": "C:\\Users\\Sabrina\\Downloads\\StudentScoreManagement-20261020T114155Z-1-001\\StudentScoreManagement\\Models\\Department.cs",
+              "RelativeDocumentMoniker": "Models\\Department.cs",
+              "ToolTip": "C:\\Users\\Sabrina\\Downloads\\StudentScoreManagement-20261020T114155Z-1-001\\StudentScoreManagement\\Models\\Department.cs",
+              "RelativeToolTip": "Models\\Department.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-25T02:14:01.919Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "DB.sql",
+              "DocumentMoniker": "C:\\Users\\Sabrina\\Downloads\\StudentScoreManagement-20261020T114155Z-1-001\\StudentScoreManagement\\DB.sql",
+              "RelativeDocumentMoniker": "DB.sql",
+              "ToolTip": "C:\\Users\\Sabrina\\Downloads\\StudentScoreManagement-20261020T114155Z-1-001\\StudentScoreManagement\\DB.sql",
+              "RelativeToolTip": "DB.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2026-06-24T12:18:31.139Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\Sabrina\\Downloads\\StudentScoreManagement-20261020T114155Z-1-001\\StudentScoreManagement\\Views\\Student\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Views\\Student\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\Sabrina\\Downloads\\StudentScoreManagement-20261020T114155Z-1-001\\StudentScoreManagement\\Views\\Student\\Delete.cshtml",
+              "RelativeToolTip": "Views\\Student\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-25T02:13:53.834Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ScoreReport.cshtml",
+              "DocumentMoniker": "C:\\Users\\Sabrina\\Downloads\\StudentScoreManagement-20261020T114155Z-1-001\\StudentScoreManagement\\Views\\Report\\ScoreReport.cshtml",
+              "RelativeDocumentMoniker": "Views\\Report\\ScoreReport.cshtml",
+              "ToolTip": "C:\\Users\\Sabrina\\Downloads\\StudentScoreManagement-20261020T114155Z-1-001\\StudentScoreManagement\\Views\\Report\\ScoreReport.cshtml",
+              "RelativeToolTip": "Views\\Report\\ScoreReport.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-24T07:51:58.52Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\Sabrina\\Downloads\\StudentScoreManagement-20261020T114155Z-1-001\\StudentScoreManagement\\Views\\Course\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\Course\\Details.cshtml",
+              "ToolTip": "C:\\Users\\Sabrina\\Downloads\\StudentScoreManagement-20261020T114155Z-1-001\\StudentScoreManagement\\Views\\Course\\Details.cshtml",
+              "RelativeToolTip": "Views\\Course\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-23T17:03:46.78Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\Sabrina\\Downloads\\StudentScoreManagement-20261020T114155Z-1-001\\StudentScoreManagement\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\Sabrina\\Downloads\\StudentScoreManagement-20261020T114155Z-1-001\\StudentScoreManagement\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-24T16:23:21.996Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Search.cshtml",
+              "DocumentMoniker": "C:\\Users\\Sabrina\\Downloads\\StudentScoreManagement-20261020T114155Z-1-001\\StudentScoreManagement\\Views\\Report\\Search.cshtml",
+              "RelativeDocumentMoniker": "Views\\Report\\Search.cshtml",
+              "ToolTip": "C:\\Users\\Sabrina\\Downloads\\StudentScoreManagement-20261020T114155Z-1-001\\StudentScoreManagement\\Views\\Report\\Search.cshtml",
+              "RelativeToolTip": "Views\\Report\\Search.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAwwAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-24T08:07:32.727Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Student.cs",
+              "DocumentMoniker": "C:\\Users\\Sabrina\\Downloads\\StudentScoreManagement-20261020T114155Z-1-001\\StudentScoreManagement\\Models\\Student.cs",
+              "RelativeDocumentMoniker": "Models\\Student.cs",
+              "ToolTip": "C:\\Users\\Sabrina\\Downloads\\StudentScoreManagement-20261020T114155Z-1-001\\StudentScoreManagement\\Models\\Student.cs",
+              "RelativeToolTip": "Models\\Student.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-24T08:10:56.741Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\Sabrina\\Downloads\\StudentScoreManagement-20261020T114155Z-1-001\\StudentScoreManagement\\Views\\Student\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\Student\\Details.cshtml",
+              "ToolTip": "C:\\Users\\Sabrina\\Downloads\\StudentScoreManagement-20261020T114155Z-1-001\\StudentScoreManagement\\Views\\Student\\Details.cshtml",
+              "RelativeToolTip": "Views\\Student\\Details.cshtml",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAADwAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-24T08:20:46.543Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "StudentController.cs",
+              "DocumentMoniker": "C:\\Users\\Sabrina\\Downloads\\StudentScoreManagement-20261020T114155Z-1-001\\StudentScoreManagement\\Controllers\\StudentController.cs",
+              "RelativeDocumentMoniker": "Controllers\\StudentController.cs",
+              "ToolTip": "C:\\Users\\Sabrina\\Downloads\\StudentScoreManagement-20261020T114155Z-1-001\\StudentScoreManagement\\Controllers\\StudentController.cs",
+              "RelativeToolTip": "Controllers\\StudentController.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwCQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-24T16:51:05.668Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Sabrina\\Downloads\\StudentScoreManagement-20261020T114155Z-1-001\\StudentScoreManagement\\Views\\Course\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Course\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Sabrina\\Downloads\\StudentScoreManagement-20261020T114155Z-1-001\\StudentScoreManagement\\Views\\Course\\Index.cshtml",
+              "RelativeToolTip": "Views\\Course\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-23T16:37:01.456Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "C:\\Users\\Sabrina\\Downloads\\StudentScoreManagement-20261020T114155Z-1-001\\StudentScoreManagement\\Views\\Shared\\Error.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\Error.cshtml",
+              "ToolTip": "C:\\Users\\Sabrina\\Downloads\\StudentScoreManagement-20261020T114155Z-1-001\\StudentScoreManagement\\Views\\Shared\\Error.cshtml",
+              "RelativeToolTip": "Views\\Shared\\Error.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-24T16:23:24.584Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ReportController.cs",
+              "DocumentMoniker": "C:\\Users\\Sabrina\\Downloads\\StudentScoreManagement-20261020T114155Z-1-001\\StudentScoreManagement\\Controllers\\ReportController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ReportController.cs",
+              "ToolTip": "C:\\Users\\Sabrina\\Downloads\\StudentScoreManagement-20261020T114155Z-1-001\\StudentScoreManagement\\Controllers\\ReportController.cs",
+              "RelativeToolTip": "Controllers\\ReportController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-24T08:09:43.575Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "_ValidationScriptsPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\Sabrina\\Downloads\\StudentScoreManagement-20261020T114155Z-1-001\\StudentScoreManagement\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ToolTip": "C:\\Users\\Sabrina\\Downloads\\StudentScoreManagement-20261020T114155Z-1-001\\StudentScoreManagement\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-24T16:23:27.083Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Sabrina\\Downloads\\StudentScoreManagement-20261020T114155Z-1-001\\StudentScoreManagement\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Sabrina\\Downloads\\StudentScoreManagement-20261020T114155Z-1-001\\StudentScoreManagement\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-24T16:23:06.502Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "GenerateViews.py",
+              "DocumentMoniker": "C:\\Users\\Sabrina\\Downloads\\StudentScoreManagement-20261020T114155Z-1-001\\StudentScoreManagement\\GenerateViews.py",
+              "RelativeDocumentMoniker": "GenerateViews.py",
+              "ToolTip": "C:\\Users\\Sabrina\\Downloads\\StudentScoreManagement-20261020T114155Z-1-001\\StudentScoreManagement\\GenerateViews.py",
+              "RelativeToolTip": "GenerateViews.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2026-06-24T12:18:47.068Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "GenerateViews.ps1",
+              "DocumentMoniker": "C:\\Users\\Sabrina\\Downloads\\StudentScoreManagement-20261020T114155Z-1-001\\StudentScoreManagement\\GenerateViews.ps1",
+              "RelativeDocumentMoniker": "GenerateViews.ps1",
+              "ToolTip": "C:\\Users\\Sabrina\\Downloads\\StudentScoreManagement-20261020T114155Z-1-001\\StudentScoreManagement\\GenerateViews.ps1",
+              "RelativeToolTip": "GenerateViews.ps1",
+              "ViewState": "AgIAALABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-06-24T12:18:33.643Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\Sabrina\\Downloads\\StudentScoreManagement-20261020T114155Z-1-001\\StudentScoreManagement\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\Sabrina\\Downloads\\StudentScoreManagement-20261020T114155Z-1-001\\StudentScoreManagement\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Properties\\launchSettings.json",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAYwBAAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-06-24T09:56:27.205Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Sabrina\\Downloads\\StudentScoreManagement-20261020T114155Z-1-001\\StudentScoreManagement\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\ErrorViewModel.cs",
+              "ToolTip": "C:\\Users\\Sabrina\\Downloads\\StudentScoreManagement-20261020T114155Z-1-001\\StudentScoreManagement\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "Models\\ErrorViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-24T08:11:03.471Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Sabrina\\Downloads\\StudentScoreManagement-20261020T114155Z-1-001\\StudentScoreManagement\\Models\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Models\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\Sabrina\\Downloads\\StudentScoreManagement-20261020T114155Z-1-001\\StudentScoreManagement\\Models\\AppDbContext.cs",
+              "RelativeToolTip": "Models\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-24T08:10:50.813Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Statistics.cshtml",
+              "DocumentMoniker": "C:\\Users\\Sabrina\\Downloads\\StudentScoreManagement-20261020T114155Z-1-001\\StudentScoreManagement\\Views\\Report\\Statistics.cshtml",
+              "RelativeDocumentMoniker": "Views\\Report\\Statistics.cshtml",
+              "ToolTip": "C:\\Users\\Sabrina\\Downloads\\StudentScoreManagement-20261020T114155Z-1-001\\StudentScoreManagement\\Views\\Report\\Statistics.cshtml",
+              "RelativeToolTip": "Views\\Report\\Statistics.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADcAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-24T07:53:11.079Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Sabrina\\Downloads\\StudentScoreManagement-20261020T114155Z-1-001\\StudentScoreManagement\\Views\\Course\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\Course\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\Sabrina\\Downloads\\StudentScoreManagement-20261020T114155Z-1-001\\StudentScoreManagement\\Views\\Course\\Edit.cshtml",
+              "RelativeToolTip": "Views\\Course\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-23T16:50:09.727Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Sabrina\\Downloads\\StudentScoreManagement-20261020T114155Z-1-001\\StudentScoreManagement\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\Sabrina\\Downloads\\StudentScoreManagement-20261020T114155Z-1-001\\StudentScoreManagement\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-06-23T16:42:24.555Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

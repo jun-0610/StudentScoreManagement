@@ -1,0 +1,19 @@
+@model StudentScoreManagement.Models.Instructor
+@{ ViewData["Title"] = "刪除教師"; }
+<h1>刪除教師</h1>
+<h3 class="text-danger">確定要刪除這位教師嗎？</h3>
+<div class="card p-4 mb-4">
+    <dl class="row">
+        <dt class="col-sm-3">姓名</dt>
+        <dd class="col-sm-9">@Model.FullName</dd>
+        <dt class="col-sm-3">電子郵件</dt>
+        <dd class="col-sm-9">@Model.Email</dd>
+        <dt class="col-sm-3">薪資</dt>
+        <dd class="col-sm-9">$@Model.Salary.ToString("N2")</dd>
+    </dl>
+</div>
+<form asp-action="Delete">
+    <input type="hidden" asp-for="InstructorID" />
+    <input type="submit" value="確定刪除" class="btn btn-danger" />
+    <a asp-action="Index" class="btn btn-secondary">取消</a>
+</form>

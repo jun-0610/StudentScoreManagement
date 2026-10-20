@@ -1,0 +1,141 @@
+@model StudentScoreManagement.Models.AdvancedQueriesReportViewModel
+@{ ViewData["Title"] = "進階 SQL 報表"; }
+<h1>📊 進階 SQL 關聯與統計報表</h1>
+<p class="text-muted">此頁面呈現五個對應 MS SQL Server 複雜資料庫設計的進階查詢結果。</p>
+<hr />
+
+<!-- Tab Navigation -->
+<ul class="nav nav-pills mb-4" id="advancedQueryTab" role="tablist">
+    <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="query1-tab" data-bs-toggle="pill" data-bs-target="#query1" type="button" role="tab">1. 部門平均薪資</button>
+    </li>
+    <li class="nav-item" role="presentation">
+        <button class="nav-link" id="query2-tab" data-bs-toggle="pill" data-bs-target="#query2" type="button" role="tab">2. 參與多專案成員</button>
+    </li>
+    <li class="nav-item" role="presentation">
+        <button class="nav-link" id="query3-tab" data-bs-toggle="pill" data-bs-target="#query3" type="button" role="tab">3. 學生累積學分</button>
+    </li>
+    <li class="nav-item" role="presentation">
+        <button class="nav-link" id="query4-tab" data-bs-toggle="pill" data-bs-target="#query4" type="button" role="tab">4. 客戶贊助總額</button>
+    </li>
+    <li class="nav-item" role="presentation">
+        <button class="nav-link" id="query5-tab" data-bs-toggle="pill" data-bs-target="#query5" type="button" role="tab">5. 課程首尾名單</button>
+    </li>
+</ul>
+
+<!-- Tab Content -->
+<div class="tab-content" id="advancedQueryTabContent">
+    <!-- Query 1: 部門員工平均薪資 -->
+    <div class="tab-pane fade show active" id="query1" role="tabpanel">
+        <div class="card p-4">
+            <h3 class="text-info">Query 1: 查詢科系教師(員工)平均薪資</h3>
+            <p class="text-muted"><code>SELECT d.DepartmentName, COUNT(i.InstructorID) AS Total, AVG(i.Salary) AS Avg FROM Departments d INNER JOIN Instructors i ON d.DepartmentID = i.DepartmentID GROUP BY d.DepartmentName</code></p>
+            <table class="table table-striped table-hover">
+                <thead>
+                    <tr><th>部門名稱</th><th>教師總人數</th><th>平均薪資</th></tr>
+                </thead>
+                <tbody>
+                @foreach (var item in Model.DeptAvgSalaries) {
+                    <tr><td>@item.DepartmentName</td><td>@item.TotalInstructors 人</td><td>$@item.AverageSalary.ToString("N2")</td></tr>
+                }
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Query 2: 同時參與多專案的員工/助理 -->
+    <div class="tab-pane fade" id="query2" role="tabpanel">
+        <div class="card p-4">
+            <h3 class="text-info">Query 2: 找出同時參與 2 個以上研究專案的成員 (多對多篩選)</h3>
+            <p class="text-muted"><code>SELECT s.StudentID, Name, COUNT(pm.ProjectID) FROM Students s INNER JOIN ProjectMembers pm GROUP BY HAVING COUNT(pm.ProjectID) > 1</code></p>
+            <table class="table table-striped table-hover">
+                <thead>
+                    <tr><th>成員學號</th><th>姓名</th><th>主修科系</th><th>參與專案數</th></tr>
+                </thead>
+                <tbody>
+                @if (Model.MultipleProjectsStudents.Any()) {
+                    foreach (var item in Model.MultipleProjectsStudents) {
+                        <tr><td>@item.StudentID</td><td>@item.StudentName</td><td>@item.DepartmentName</td><td><span class="badge bg-warning text-dark">@item.ProjectCount 個專案</span></td></tr>
+                    }
+                } else {
+                    <tr><td colspan="4" class="text-center text-muted">目前尚無同時參與多個專案的學生助理</td></tr>
+                }
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Query 3: 學生修課總學分 -->
+    <div class="tab-pane fade" id="query3" role="tabpanel">
+        <div class="card p-4">
+            <h3 class="text-info">Query 3: 計算每位學生及格修畢之總學分 (CROSS-JOIN)</h3>
+            <p class="text-muted"><code>SELECT s.StudentID, Name, SUM(c.Credits) FROM Students s JOIN Enrollments e JOIN Courses c WHERE e.Grade >= 60 GROUP BY s.StudentID</code></p>
+            <table class="table table-striped table-hover">
+                <thead>
+                    <tr><th>學號</th><th>學生姓名</th><th>修讀總科目數</th><th>及格累計總學分</th></tr>
+                </thead>
+                <tbody>
+                @foreach (var item in Model.StudentCredits) {
+                    <tr>
+                        <td>@item.StudentID</td>
+                        <td>@item.StudentName</td>
+                        <td>@item.CoursesTaken 門課</td>
+                        <td>
+                            @if (item.TotalEarnedCredits >= 9) {
+                                <span class="text-success font-weight-bold">@item.TotalEarnedCredits 學分 (進度超前)</span>
+                            } else {
+                                <span>@item.TotalEarnedCredits 學分</span>
+                            }
+                        </td>
+                    </tr>
+                }
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Query 4: 客戶/贊助商總提撥金額 -->
+    <div class="tab-pane fade" id="query4" role="tabpanel">
+        <div class="card p-4">
+            <h3 class="text-info">Query 4: 查詢某客戶(贊助商)的專案贊助總金額 (Sponsor Funding)</h3>
+            <p class="text-muted"><code>SELECT sp.SponsorName, SUM(pf.FundingAmount) FROM Sponsors sp LEFT JOIN ProjectFunding pf GROUP BY sp.SponsorName</code></p>
+            <table class="table table-striped table-hover">
+                <thead>
+                    <tr><th>客戶/贊助商名稱</th><th>聯絡信箱</th><th>累計提撥贊助總額</th></tr>
+                </thead>
+                <tbody>
+                @foreach (var item in Model.SponsorFundings) {
+                    <tr>
+                        <td>@item.SponsorName</td>
+                        <td>@item.ContactEmail</td>
+                        <td><strong class="text-success">$@item.TotalFunding.ToString("N2")</strong></td>
+                    </tr>
+                }
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Query 5: 課程中最高分與最低分學生 -->
+    <div class="tab-pane fade" id="query5" role="tabpanel">
+        <div class="card p-4">
+            <h3 class="text-info">Query 5: 找出每門課程中最高分與最低分的學生 (Subquery)</h3>
+            <p class="text-muted">利用子查詢針對每門 CourseID 篩選其成績最大與最小值，並回傳學生姓名。</p>
+            <table class="table table-striped table-hover">
+                <thead>
+                    <tr><th>課程 ID</th><th>課程名稱</th><th>🥇 最高分學生 (MAX)</th><th>🥉 最低分學生 (MIN)</th></tr>
+                </thead>
+                <tbody>
+                @foreach (var item in Model.CourseScorers) {
+                    <tr>
+                        <td>@item.CourseID</td>
+                        <td>@item.CourseName</td>
+                        <td><span class="text-success">@item.HighestScoringStudent</span></td>
+                        <td><span class="text-danger">@item.LowestScoringStudent</span></td>
+                    </tr>
+                }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

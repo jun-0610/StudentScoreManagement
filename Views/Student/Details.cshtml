@@ -1,0 +1,102 @@
+@model StudentScoreManagement.Models.Student
+@{ ViewData["Title"] = "學生詳細資料"; }
+<h1>學生詳細資料</h1>
+<div class="card p-4 mb-4">
+    <dl class="row">
+        <dt class="col-sm-3">學號 (StudentID)</dt>
+        <dd class="col-sm-9">@Model.StudentID</dd>
+        <dt class="col-sm-3">學生姓名</dt>
+        <dd class="col-sm-9">@Model.FullName</dd>
+        <dt class="col-sm-3">電子郵件</dt>
+        <dd class="col-sm-9">@Model.Email</dd>
+        <dt class="col-sm-3">主修科系</dt>
+        <dd class="col-sm-9">@(Model.Department != null ? Model.Department.DepartmentName : "無")</dd>
+        <dt class="col-sm-3">入學日期</dt>
+        <dd class="col-sm-9">@Model.EnrollmentDate.ToString("yyyy-MM-dd")</dd>
+    </dl>
+</div>
+<hr />
+<h3>修課成績清冊 (Cross-Relation: Course & Grades)</h3>
+<table class="table table-hover">
+    <thead>
+        <tr><th>課程名稱</th><th>學分數</th><th>學期</th><th>成績</th><th>狀態</th></tr>
+    </thead>
+    <tbody>
+@if (Model.Enrollments != null && Model.Enrollments.Any()) {
+    foreach(var e in Model.Enrollments) {
+        <tr>
+            <td>@(e.Course != null ? e.Course.CourseName : "無")</td>
+            <td>@(e.Course != null ? e.Course.Credits.ToString() : "0")</td>
+            <td>@e.Semester</td>
+            <td>@(e.Grade.HasValue ? e.Grade.Value.ToString("F1") + " 分" : "未評分")</td>
+            <td>
+                @if (e.Grade.HasValue) {
+                    if (e.Grade.Value >= 60.00m) {
+                        <span class="badge bg-success">及格 (Passed)</span>
+                    } else {
+                        <span class="badge bg-danger">不及格 (Failed)</span>
+                    }
+                } else {
+                    <span class="badge bg-secondary">進行中</span>
+                }
+            </td>
+        </tr>
+    }
+} else {
+    <tr><td colspan="5" class="text-muted text-center">尚無修課紀錄</td></tr>
+}
+    </tbody>
+</table>
+<hr />
+<h3>參與研究專案 (Many-to-Many via ProjectMembers)</h3>
+<table class="table table-hover">
+    <thead>
+        <tr><th>專案名稱</th><th>扮演角色</th><th>每週分配時數</th></tr>
+    </thead>
+    <tbody>
+@if (Model.ProjectMembers != null && Model.ProjectMembers.Any()) {
+    foreach(var pm in Model.ProjectMembers) {
+        <tr>
+            <td>@(pm.Project != null ? pm.Project.ProjectName : "無")</td>
+            <td>@pm.Role</td>
+            <td>@pm.HoursAllocated 小時</td>
+        </tr>
+    }
+} else {
+    <tr><td colspan="3" class="text-muted text-center">目前無參與任何專案</td></tr>
+}
+    </tbody>
+</table>
+<hr />
+<h3>指派專案任務 (Hierarchy Level 4)</h3>
+<table class="table table-hover">
+    <thead>
+        <tr><th>任務名稱</th><th>專案名稱</th><th>截止日期</th><th>狀態</th></tr>
+    </thead>
+    <tbody>
+@if (Model.ProjectTasks != null && Model.ProjectTasks.Any()) {
+    foreach(var pt in Model.ProjectTasks) {
+        <tr>
+            <td>@pt.TaskName</td>
+            <td>@(pt.Project != null ? pt.Project.ProjectName : "無")</td>
+            <td>@(pt.DueDate.HasValue ? pt.DueDate.Value.ToString("yyyy-MM-dd") : "無")</td>
+            <td>
+                @if(pt.Status == "Completed") {
+                    <span class="badge bg-success">已完成</span>
+                } else if(pt.Status == "In Progress") {
+                    <span class="badge bg-primary">進行中</span>
+                } else {
+                    <span class="badge bg-warning text-dark">待處理</span>
+                }
+            </td>
+        </tr>
+    }
+} else {
+    <tr><td colspan="4" class="text-muted text-center">目前無指派任務</td></tr>
+}
+    </tbody>
+</table>
+<div class="mt-4">
+    <a asp-action="Edit" asp-route-id="@Model.StudentID" class="btn btn-primary">編輯</a>
+    <a asp-action="Index" class="btn btn-secondary">返回列表</a>
+</div>

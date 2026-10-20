@@ -1,0 +1,51 @@
+@model StudentScoreManagement.Models.StatisticsViewModel
+@{ ViewData["Title"] = "全校成績統計"; }
+<h1>全校選課成績數據統計 (Aggregate Functions)</h1>
+<div class="row g-4 mb-4">
+    <div class="col-md-4">
+        <div class="card p-4 text-center border-info">
+            <h5 class="text-muted">平均分數 (AVG)</h5>
+            <h2 class="text-info font-weight-bold">@Model.AverageScore.ToString("F2") 分</h2>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card p-4 text-center border-success">
+            <h5 class="text-muted">最高分數 (MAX)</h5>
+            <h2 class="text-success font-weight-bold">@Model.MaxScore.ToString("F1") 分</h2>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card p-4 text-center border-danger">
+            <h5 class="text-muted">最低分數 (MIN)</h5>
+            <h2 class="text-danger font-weight-bold">@Model.MinScore.ToString("F1") 分</h2>
+        </div>
+    </div>
+</div>
+<hr />
+<h3>每位學生平均成績排名 (GROUP BY 統計)</h3>
+<table class="table table-hover">
+    <thead>
+        <tr><th>學生姓名</th><th>平均成績</th><th>評語</th></tr>
+    </thead>
+    <tbody>
+@if (Model.StudentAverages != null && Model.StudentAverages.Any()) {
+    foreach(var item in Model.StudentAverages) {
+        <tr>
+            <td>@item.StudentName</td>
+            <td><strong>@item.Average.ToString("F2") 分</strong></td>
+            <td>
+                @if (item.Average >= 85) {
+                    <span class="badge bg-success">傑出 (Excellent)</span>
+                } else if(item.Average >= 60) {
+                    <span class="badge bg-primary">通過 (Passed)</span>
+                } else {
+                    <span class="badge bg-danger">需再努力 (Fail)</span>
+                }
+            </td>
+        </tr>
+    }
+} else {
+    <tr><td colspan="3" class="text-muted text-center">目前無評分數據。</td></tr>
+}
+    </tbody>
+</table>

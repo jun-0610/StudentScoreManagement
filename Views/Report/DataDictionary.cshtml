@@ -1,0 +1,184 @@
+@{ ViewData["Title"] = "資料字典"; }
+<h1>📘 智慧生產專案資料字典 (Data Dictionary)</h1>
+<p class="text-muted">此處列出本資料庫系統 10 個核心資料表的綱要結構定義，用以確保實體完整性與參考完整性。</p>
+<hr />
+<div class="accordion" id="dataDictAccordion">
+    <div class="accordion-item bg-dark text-white border-secondary">
+        <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button bg-secondary text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                1. Departments (科系部門表) - 階層 Level 1
+            </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#dataDictAccordion">
+            <div class="accordion-body">
+                <ul>
+                    <li><strong>DepartmentID (INT, PK, Identity):</strong> 科系唯一識別碼</li>
+                    <li><strong>DepartmentName (NVARCHAR(100), UNIQUE):</strong> 科系部門名稱 (如：資訊工程學系)</li>
+                    <li><strong>OfficeLocation (NVARCHAR(100)):</strong> 辦公室物理位置 (如：工程一館 401)</li>
+                    <li><strong>Budget (DECIMAL(18,2)):</strong> 年度經費預算 (預設為 0.00，CHECK >= 0)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item bg-dark text-white border-secondary mt-2">
+        <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed bg-secondary text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                2. Instructors (教師主管表) - 階層 Level 2
+            </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#dataDictAccordion">
+            <div class="accordion-body">
+                <ul>
+                    <li><strong>InstructorID (INT, PK, Identity):</strong> 教師唯一識別碼</li>
+                    <li><strong>FirstName, LastName (NVARCHAR(50)):</strong> 姓名欄位</li>
+                    <li><strong>Email (NVARCHAR(100), UNIQUE):</strong> 信箱</li>
+                    <li><strong>Salary (DECIMAL(18,2)):</strong> 薪資</li>
+                    <li><strong>DepartmentID (INT, FK -> Departments):</strong> 隸屬科系</li>
+                    <li><strong>ManagerID (INT, FK -> Instructors):</strong> 組織階層自關聯外鍵，指向直屬的主管教師 (如：系主任)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item bg-dark text-white border-secondary mt-2">
+        <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed bg-secondary text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                3. Students (學生基本資料表)
+            </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#dataDictAccordion">
+            <div class="accordion-body">
+                <ul>
+                    <li><strong>StudentID (INT, PK, Identity):</strong> 學生學號</li>
+                    <li><strong>FirstName, LastName (NVARCHAR(50)):</strong> 姓名</li>
+                    <li><strong>Email (NVARCHAR(100), UNIQUE):</strong> 信箱</li>
+                    <li><strong>EnrollmentDate (DATE):</strong> 入學日期</li>
+                    <li><strong>DepartmentID (INT, FK -> Departments):</strong> 主修科系</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item bg-dark text-white border-secondary mt-2">
+        <h2 class="accordion-header" id="headingFour">
+            <button class="accordion-button collapsed bg-secondary text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour">
+                4. Courses (課程表)
+            </button>
+        </h2>
+        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#dataDictAccordion">
+            <div class="accordion-body">
+                <ul>
+                    <li><strong>CourseID (INT, PK, Identity):</strong> 課程唯一代碼</li>
+                    <li><strong>CourseName (NVARCHAR(100)):</strong> 課程名稱</li>
+                    <li><strong>Credits (INT):</strong> 學分數 (CHECK 1-10)</li>
+                    <li><strong>DepartmentID (INT, FK -> Departments):</strong> 開設科系</li>
+                    <li><strong>InstructorID (INT, FK -> Instructors):</strong> 授課教師</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item bg-dark text-white border-secondary mt-2">
+        <h2 class="accordion-header" id="headingFive">
+            <button class="accordion-button collapsed bg-secondary text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive">
+                5. Enrollments (學生選課與評分中介表) - 多對多關聯
+            </button>
+        </h2>
+        <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#dataDictAccordion">
+            <div class="accordion-body">
+                <ul>
+                    <li><strong>EnrollmentID (INT, PK, Identity):</strong> 選課流水號</li>
+                    <li><strong>StudentID (INT, FK -> Students):</strong> 學生</li>
+                    <li><strong>CourseID (INT, FK -> Courses):</strong> 課程</li>
+                    <li><strong>Semester (NVARCHAR(20)):</strong> 修課學期 (如：112-1)</li>
+                    <li><strong>Grade (DECIMAL(5,2)):</strong> 成績分數 (CHECK 0.00 - 100.00，外鍵串接)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item bg-dark text-white border-secondary mt-2">
+        <h2 class="accordion-header" id="headingSix">
+            <button class="accordion-button collapsed bg-secondary text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix">
+                6. Projects (研究專案表) - 階層 Level 3
+            </button>
+        </h2>
+        <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#dataDictAccordion">
+            <div class="accordion-body">
+                <ul>
+                    <li><strong>ProjectID (INT, PK, Identity):</strong> 專案唯一識別碼</li>
+                    <li><strong>ProjectName (NVARCHAR(150)):</strong> 專案名稱</li>
+                    <li><strong>Budget (DECIMAL(18,2)):</strong> 專案總預算金額</li>
+                    <li><strong>StartDate / EndDate (DATE):</strong> 起迄期程</li>
+                    <li><strong>LeadInstructorID (INT, FK -> Instructors):</strong> 主持教師</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item bg-dark text-white border-secondary mt-2">
+        <h2 class="accordion-header" id="headingSeven">
+            <button class="accordion-button collapsed bg-secondary text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven">
+                7. ProjectMembers (專案團隊中介表) - 多對多關聯
+            </button>
+        </h2>
+        <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#dataDictAccordion">
+            <div class="accordion-body">
+                <ul>
+                    <li><strong>ProjectID (INT, FK, Composite PK):</strong> 指向研究專案</li>
+                    <li><strong>StudentID (INT, FK, Composite PK):</strong> 指向學生助理</li>
+                    <li><strong>Role (NVARCHAR(50)):</strong> 在專案中擔任職務角色 (預設為 'Research Assistant')</li>
+                    <li><strong>HoursAllocated (INT):</strong> 每週分配工作時數</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item bg-dark text-white border-secondary mt-2">
+        <h2 class="accordion-header" id="headingEight">
+            <button class="accordion-button collapsed bg-secondary text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight">
+                8. ProjectTasks (專案子任務表) - 階層 Level 4
+            </button>
+        </h2>
+        <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#dataDictAccordion">
+            <div class="accordion-body">
+                <ul>
+                    <li><strong>TaskID (INT, PK, Identity):</strong> 任務流水號</li>
+                    <li><strong>TaskName (NVARCHAR(100)):</strong> 任務名稱 (例如：韌體控制開發)</li>
+                    <li><strong>ProjectID (INT, FK -> Projects):</strong> 所屬父專案</li>
+                    <li><strong>AssignedStudentID (INT, FK -> Students):</strong> 被指派執行之學生</li>
+                    <li><strong>Status (NVARCHAR(20)):</strong> 進度狀態 ('To Do', 'In Progress', 'Completed')</li>
+                    <li><strong>DueDate (DATE):</strong> 截止日期</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item bg-dark text-white border-secondary mt-2">
+        <h2 class="accordion-header" id="headingNine">
+            <button class="accordion-button collapsed bg-secondary text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine">
+                9. Sponsors (贊助商/客戶表)
+            </button>
+        </h2>
+        <div id="collapseNine" class="accordion-collapse collapse" data-bs-parent="#dataDictAccordion">
+            <div class="accordion-body">
+                <ul>
+                    <li><strong>SponsorID (INT, PK, Identity):</strong> 贊助商識別碼</li>
+                    <li><strong>SponsorName (NVARCHAR(100), UNIQUE):</strong> 客戶/企業單位名稱</li>
+                    <li><strong>ContactEmail (NVARCHAR(100)):</strong> 窗口信箱</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item bg-dark text-white border-secondary mt-2">
+        <h2 class="accordion-header" id="headingTen">
+            <button class="accordion-button collapsed bg-secondary text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen">
+                10. ProjectFunding (專案資助合約訂單)
+            </button>
+        </h2>
+        <div id="collapseTen" class="accordion-collapse collapse" data-bs-parent="#dataDictAccordion">
+            <div class="accordion-body">
+                <ul>
+                    <li><strong>FundingID (INT, PK, Identity):</strong> 合約提撥序號</li>
+                    <li><strong>SponsorID (INT, FK -> Sponsors):</strong> 撥款單位</li>
+                    <li><strong>ProjectID (INT, FK -> Projects):</strong> 受款研究專案</li>
+                    <li><strong>FundingAmount (DECIMAL(18,2)):</strong> 資助金額</li>
+                    <li><strong>FundingDate (DATE):</strong> 提撥日期</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

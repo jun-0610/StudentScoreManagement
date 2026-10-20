@@ -1,0 +1,23 @@
+@model StudentScoreManagement.Models.ProjectTask
+@{ ViewData["Title"] = "任務詳細資料"; }
+<h1>專案任務詳細細節</h1>
+<div class="card p-4">
+    <dl class="row">
+        <dt class="col-sm-3">任務 ID</dt>
+        <dd class="col-sm-9">@Model.TaskID</dd>
+        <dt class="col-sm-3">任務名稱</dt>
+        <dd class="col-sm-9">@Model.TaskName</dd>
+        <dt class="col-sm-3">所屬研究專案</dt>
+        <dd class="col-sm-9">@(Model.Project != null ? Model.Project.ProjectName : "無")</dd>
+        <dt class="col-sm-3">負責執行學生</dt>
+        <dd class="col-sm-9">@(Model.AssignedStudent != null ? Model.AssignedStudent.FullName : "無")</dd>
+        <dt class="col-sm-3">目前狀態</dt>
+        <dd class="col-sm-9">@Model.Status</dd>
+        <dt class="col-sm-3">截止期限</dt>
+        <dd class="col-sm-9">@(Model.DueDate.HasValue ? Model.DueDate.Value.ToString("yyyy-MM-dd") : "無期限")</dd>
+    </dl>
+</div>
+<div class="mt-4">
+    <a asp-action="Edit" asp-route-id="@Model.TaskID" class="btn btn-primary">編輯</a>
+    <a asp-action="Index" class="btn btn-secondary">返回列表</a>
+</div>

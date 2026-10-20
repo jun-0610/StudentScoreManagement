@@ -1,0 +1,19 @@
+@model StudentScoreManagement.Models.ProjectFunding
+@{ ViewData["Title"] = "刪除撥款紀錄"; }
+<h1>刪除提撥明細</h1>
+<h3 class="text-danger">確定要撤除這筆資金提撥記錄嗎？</h3>
+<div class="card p-4 mb-4">
+    <dl class="row">
+        <dt class="col-sm-3">贊助商</dt>
+        <dd class="col-sm-9">@(Model.Sponsor != null ? Model.Sponsor.SponsorName : "無")</dd>
+        <dt class="col-sm-3">專案</dt>
+        <dd class="col-sm-9">@(Model.Project != null ? Model.Project.ProjectName : "無")</dd>
+        <dt class="col-sm-3">金額</dt>
+        <dd class="col-sm-9">$@Model.FundingAmount.ToString("N2")</dd>
+    </dl>
+</div>
+<form asp-action="Delete">
+    <input type="hidden" asp-for="FundingID" />
+    <input type="submit" value="確定撤除" class="btn btn-danger" />
+    <a asp-action="Index" class="btn btn-secondary">取消</a>
+</form>

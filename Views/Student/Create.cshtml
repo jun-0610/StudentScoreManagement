@@ -1,0 +1,39 @@
+@model StudentScoreManagement.Models.Student
+@{ ViewData["Title"] = "新增學生"; }
+<h1>新增學生</h1>
+<hr />
+<div class="row">
+    <div class="col-md-6">
+        <form asp-action="Create" class="card p-4">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group mb-3">
+                <label asp-for="LastName" class="control-label mb-1">姓氏</label>
+                <input asp-for="LastName" class="form-control" />
+                <span asp-validation-for="LastName" class="text-danger"></span>
+            </div>
+            <div class="form-group mb-3">
+                <label asp-for="FirstName" class="control-label mb-1">名字</label>
+                <input asp-for="FirstName" class="form-control" />
+                <span asp-validation-for="FirstName" class="text-danger"></span>
+            </div>
+            <div class="form-group mb-3">
+                <label asp-for="Email" class="control-label mb-1"></label>
+                <input asp-for="Email" class="form-control" type="email" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group mb-3">
+                <label asp-for="EnrollmentDate" class="control-label mb-1"></label>
+                <input asp-for="EnrollmentDate" class="form-control" type="date" />
+                <span asp-validation-for="EnrollmentDate" class="text-danger"></span>
+            </div>
+            <div class="form-group mb-3">
+                <label asp-for="DepartmentID" class="control-label mb-1"></label>
+                <select asp-for="DepartmentID" class="form-control" asp-items="ViewBag.DepartmentID"></select>
+            </div>
+            <div class="form-group mt-4">
+                <input type="submit" value="儲存" class="btn btn-primary" />
+                <a asp-action="Index" class="btn btn-secondary">返回列表</a>
+            </div>
+        </form>
+    </div>
+</div>

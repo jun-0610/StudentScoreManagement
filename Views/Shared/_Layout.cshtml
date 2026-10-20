@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - 智慧專案資料管理系統</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/StudentScoreManagement.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom box-shadow mb-3">
+            <div class="container-fluid">
+                <a class="navbar-brand text-info font-weight-bold" asp-area="" asp-controller="Home" asp-action="Index">🎓 ProjectScoreHub</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">首頁</a>
+                        </li>
+                        <!-- Group 1: 行政學術 -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="academicDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                🏫 行政學術
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="academicDropdown">
+                                <li><a class="dropdown-item" asp-controller="Department" asp-action="Index">科系/部門管理</a></li>
+                                <li><a class="dropdown-item" asp-controller="Instructor" asp-action="Index">教師/主管管理</a></li>
+                                <li><a class="dropdown-item" asp-controller="Student" asp-action="Index">學生名冊</a></li>
+                                <li><a class="dropdown-item" asp-controller="Course" asp-action="Index">開課明細</a></li>
+                            </ul>
+                        </li>
+                        <!-- Group 2: 成績選課 -->
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Enrollment" asp-action="Index">📝 選課與成績</a>
+                        </li>
+                        <!-- Group 3: 專案任務 -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="projectDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                🚀 專案與任務
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="projectDropdown">
+                                <li><a class="dropdown-item" asp-controller="Project" asp-action="Index">研究專案管理</a></li>
+                                <li><a class="dropdown-item" asp-controller="ProjectTask" asp-action="Index">專案任務分配</a></li>
+                            </ul>
+                        </li>
+                        <!-- Group 4: 客戶與贊助 -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="sponsorDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                🤝 客戶與贊助
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="sponsorDropdown">
+                                <li><a class="dropdown-item" asp-controller="Sponsor" asp-action="Index">贊助商管理</a></li>
+                                <li><a class="dropdown-item" asp-controller="ProjectFunding" asp-action="Index">專案贊助金明細</a></li>
+                            </ul>
+                        </li>
+                        <!-- Group 5: 報表 -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-warning" href="#" id="reportDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                📊 報表與查詢
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="reportDropdown">
+                                <li><a class="dropdown-item" asp-controller="Report" asp-action="Search">模糊搜尋 (Search)</a></li>
+                                <li><a class="dropdown-item" asp-controller="Report" asp-action="Statistics">數據統計 (Aggregate)</a></li>
+                                <li><a class="dropdown-item text-info" asp-controller="Report" asp-action="AdvancedQueries">進階 SQL 報表 (5 Queries)</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" asp-controller="Report" asp-action="DataDictionary">資料字典 (Data Dictionary)</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

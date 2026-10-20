@@ -1,0 +1,32 @@
+@model IEnumerable<StudentScoreManagement.Models.Instructor>
+@{ ViewData["Title"] = "教師與主管管理"; }
+<h1>教師與組織架構列表</h1>
+<p><a asp-action="Create" class="btn btn-primary">➕ 新增教師</a></p>
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th>教師姓名</th>
+            <th>電子郵件</th>
+            <th>薪資</th>
+            <th>所屬科系</th>
+            <th>直屬主管 (Hierarchy)</th>
+            <th>功能</th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>@item.FullName</td>
+            <td>@item.Email</td>
+            <td>$@item.Salary.ToString("N2")</td>
+            <td>@(item.Department != null ? item.Department.DepartmentName : "無")</td>
+            <td>@(item.Manager != null ? item.Manager.FullName : "最上層(無)")</td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.InstructorID" class="btn btn-sm btn-warning">編輯</a> |
+                <a asp-action="Details" asp-route-id="@item.InstructorID" class="btn btn-sm btn-info">詳細</a> |
+                <a asp-action="Delete" asp-route-id="@item.InstructorID" class="btn btn-sm btn-danger">刪除</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

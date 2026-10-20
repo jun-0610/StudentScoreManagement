@@ -1,0 +1,17 @@
+@model StudentScoreManagement.Models.ProjectTask
+@{ ViewData["Title"] = "刪除任務"; }
+<h1>刪除任務</h1>
+<h3 class="text-danger">確定要刪除這筆專案任務指派嗎？</h3>
+<div class="card p-4 mb-4">
+    <dl class="row">
+        <dt class="col-sm-3">任務名稱</dt>
+        <dd class="col-sm-9">@Model.TaskName</dd>
+        <dt class="col-sm-3">指派學生</dt>
+        <dd class="col-sm-9">@(Model.AssignedStudent != null ? Model.AssignedStudent.FullName : "無")</dd>
+    </dl>
+</div>
+<form asp-action="Delete">
+    <input type="hidden" asp-for="TaskID" />
+    <input type="submit" value="確定刪除" class="btn btn-danger" />
+    <a asp-action="Index" class="btn btn-secondary">取消</a>
+</form>

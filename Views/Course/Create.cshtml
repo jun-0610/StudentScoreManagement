@@ -1,0 +1,33 @@
+@model StudentScoreManagement.Models.Course
+@{ ViewData["Title"] = "新增課程"; }
+<h1>新增課程</h1>
+<hr />
+<div class="row">
+    <div class="col-md-6">
+        <form asp-action="Create" class="card p-4">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group mb-3">
+                <label asp-for="CourseName" class="control-label mb-1"></label>
+                <input asp-for="CourseName" class="form-control" />
+                <span asp-validation-for="CourseName" class="text-danger"></span>
+            </div>
+            <div class="form-group mb-3">
+                <label asp-for="Credits" class="control-label mb-1"></label>
+                <input asp-for="Credits" class="form-control" type="number" />
+                <span asp-validation-for="Credits" class="text-danger"></span>
+            </div>
+            <div class="form-group mb-3">
+                <label asp-for="DepartmentID" class="control-label mb-1"></label>
+                <select asp-for="DepartmentID" class="form-control" asp-items="ViewBag.DepartmentID"></select>
+            </div>
+            <div class="form-group mb-3">
+                <label asp-for="InstructorID" class="control-label mb-1"></label>
+                <select asp-for="InstructorID" class="form-control" asp-items="ViewBag.InstructorID"></select>
+            </div>
+            <div class="form-group mt-4">
+                <input type="submit" value="儲存" class="btn btn-primary" />
+                <a asp-action="Index" class="btn btn-secondary">返回列表</a>
+            </div>
+        </form>
+    </div>
+</div>

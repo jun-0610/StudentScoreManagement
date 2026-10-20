@@ -1,0 +1,21 @@
+@model StudentScoreManagement.Models.Enrollment
+@{ ViewData["Title"] = "刪除選課紀錄"; }
+<h1>刪除選課登記</h1>
+<h3 class="text-danger">確定要刪除這筆選課與成績紀錄嗎？</h3>
+<div class="card p-4 mb-4">
+    <dl class="row">
+        <dt class="col-sm-3">學生</dt>
+        <dd class="col-sm-9">@(Model.Student != null ? Model.Student.FullName : "無")</dd>
+        <dt class="col-sm-3">課程</dt>
+        <dd class="col-sm-9">@(Model.Course != null ? Model.Course.CourseName : "無")</dd>
+        <dt class="col-sm-3">學期</dt>
+        <dd class="col-sm-9">@Model.Semester</dd>
+        <dt class="col-sm-3">成績</dt>
+        <dd class="col-sm-9">@(Model.Grade.HasValue ? Model.Grade.Value.ToString("F1") + " 分" : "未評分")</dd>
+    </dl>
+</div>
+<form asp-action="Delete">
+    <input type="hidden" asp-for="EnrollmentID" />
+    <input type="submit" value="確定刪除" class="btn btn-danger" />
+    <a asp-action="Index" class="btn btn-secondary">取消</a>
+</form>

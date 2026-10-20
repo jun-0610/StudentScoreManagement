@@ -1,0 +1,32 @@
+@model IEnumerable<StudentScoreManagement.Models.ProjectFunding>
+@{ ViewData["Title"] = "贊案合約管理"; }
+<h1>專案合約與資金提撥清冊 (Funding Orders)</h1>
+<p><a asp-action="Create" class="btn btn-primary">➕ 新增贊助撥款單</a></p>
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th>合約流水號</th>
+            <th>撥款贊助商(客戶)</th>
+            <th>受資助專案</th>
+            <th>贊助金額</th>
+            <th>撥款日期</th>
+            <th>功能</th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>@item.FundingID</td>
+            <td>@(item.Sponsor != null ? item.Sponsor.SponsorName : "無")</td>
+            <td>@(item.Project != null ? item.Project.ProjectName : "無")</td>
+            <td>$@item.FundingAmount.ToString("N2")</td>
+            <td>@item.FundingDate.ToString("yyyy-MM-dd")</td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.FundingID" class="btn btn-sm btn-warning">編輯</a> |
+                <a asp-action="Details" asp-route-id="@item.FundingID" class="btn btn-sm btn-info">詳細</a> |
+                <a asp-action="Delete" asp-route-id="@item.FundingID" class="btn btn-sm btn-danger">刪除</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
