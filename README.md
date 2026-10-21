@@ -118,17 +118,8 @@ ProjectScoreHub 為資料庫管理課程個人專案，以「智慧生產專案�
 
 ### 關聯範例
 
-```text
-Students
-    │
-    │ 1:N
-    ▼
-Enrollments
-    ▲
-    │ N:1
-    │
-Courses
-```
+<img width="1090" height="683" alt="image" src="https://github.com/user-attachments/assets/a73eb60a-3b0a-470e-bc6d-b174a6937f04" />
+
 
 學生可以修習多門課程，而一門課程也可由多位學生修習，因此透過 Enrollments 建立多對多關聯。
 
